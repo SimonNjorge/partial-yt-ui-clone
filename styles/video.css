@@ -4,15 +4,53 @@
     column-gap: 20px;
     row-gap: 16px;
 } 
-@media (max-width:750px){
-    .video-preview{grid-template-columns: 1fr 1fr;}
+@media (max-width:400px){
+    .video-preview{
+        grid-template-columns:  1fr;
+        
+    }
+    .sidebar{
+        display: none;
+    }
+    .BOD{
+        position: relative;
+    }
+    .mob-res{
+        position: absolute;
+        left: 2px;
+        right: 1px;
+    }
+    .youtube-logo{
+        display: none;
+    }
+    .left-section{
+        margin-right: 0;
+    }
+    .search-bar{
+        width: 80px;
+    }
+    .search-button{
+        width: 28px;
+    }
+    .middle-section{
+        margin-right: 2px;
+    }
+}
+@media (min-width:401px) and (max-width:750px){
+    .video-preview{grid-template-columns: repeat(2, 1fr)
+    }
+    .sidebar{
+        display: initial;
+    }
 }
 @media (min-width:751px) and (max-width:999px){
-    .video-preview{grid-template-columns: 1fr 1fr 1fr ;}
+    .video-preview{grid-template-columns: repeat( 3, 1fr)
+    }
 }
 
 @media(min-width:1000px){
-    .video-preview{grid-template-columns: 1fr 1fr 1fr 1fr;}
+    .video-preview{grid-template-columns: repeat(4, 1fr) 
+    }
 }
 
 .thumbnails{

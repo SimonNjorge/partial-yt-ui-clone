@@ -22,6 +22,7 @@
     height: 24px; 
     margin-right: 24px;
     margin-left: 24px;
+    cursor: pointer;
 }
 .youtube-logo{
     height: 20px;
@@ -42,7 +43,7 @@
     padding-left: 10px;
     border-radius: 2px;
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0,  0.05);
-    width:0
+    width: 20px;
 } 
 .search-bar::placeholder{
         font-family: Roboto, Arial;
@@ -67,11 +68,8 @@
     align-items: center;
     cursor: pointer;
 }
-.search-button .tool-tip,
-.voice-search-button .tool-tip,
-.upload-icon-container .tool-tip,
-.youtube-apps-icon-container .tool-tip,
-.notifications-icon-container .tool-tip{              position: absolute;
+.tool-tip{            
+    position: absolute;
     bottom: -30px;
     font-size: 12px;
     font-family: Roboto, Arial;
@@ -84,6 +82,7 @@
     transition: opacity 0.15s;
     white-space: nowrap;
 }
+.menu:hover .tool-tip,
  .search-button:hover .tool-tip,
  .voice-search-button:hover .tool-tip,
  .upload-icon-container:hover .tool-tip,
